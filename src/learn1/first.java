@@ -42,17 +42,19 @@ public class first {
 		driver = new ChromeDriver();
 		
 		
-		Map<String, String> mobileEmulation = new HashMap<>();
-		mobileEmulation.put("deviceName", "Galaxy S5");
+		//Map<String, String> mobileEmulation = new HashMap<>();
+		//mobileEmulation.put("deviceName", "Galaxy S5");
 
-		ChromeOptions chromeOptions = new ChromeOptions();
-		chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
-		WebDriver driver = new ChromeDriver(chromeOptions);
+		//ChromeOptions chromeOptions = new ChromeOptions();
+		//chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
+		WebDriver driver = new ChromeDriver();//chromeOptions);
 	
 
-		driver.navigate().to("https://www.amazon.in/");
+		driver.navigate().to("https://www.zoho.com/");
 		
-	//	driver.findElement(By.xpath("//img[@src='https://images-eu.ssl-images-amazon.com/images/G/31/Gateway/Mobile/COM._SX290_CB273074709_.png']")).click();
+		
+		
+	driver.findElement(By.xpath("//img[@src='https://images-eu.ssl-images-amazon.com/images/G/31/Gateway/Mobile/COM._SX290_CB273074709_.png']")).click();
 		
 //		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 //		driver.findElement(By.xpath("//*[@id='lst-ib']")).sendKeys("test");
